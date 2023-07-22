@@ -41,7 +41,9 @@ $private：bool
 
 此API的示例用法：  
 ```php
+<?php
 \tzdtwsj\TzBot\RegisterCmd("测试", "测试插件", function($mp){
     \tzdtwsj\TzBot\SendMsg($mp,"这是测试消息\n机器人QQ号：".$mp['mydata']['user_id']."\n触发此命令的QQ号：".$mp['user_id'],true,false);
 }, true, -1, false, true, true );
+?>
 ```
