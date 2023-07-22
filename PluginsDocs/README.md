@@ -12,9 +12,9 @@
 # 数据类型
 这里介绍下在开发过程中会出现的数据类型：  
 `int`：整数  
-`float`和`double`：单精度浮点数和双精度浮点数，这里都可以视为小数 
+`float`和`double`：单精度浮点数和双精度浮点数，这里都可以视为小数  
 `string`：字符串  
 `array`：数组  
 `bool`：布尔值，通常是是true和false  
 `null`：空值  
-`callable`：回调函数
+`callable`：回调函数  
