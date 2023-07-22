@@ -1,5 +1,5 @@
 # 插件API
-> 注意：本API所有实现都在命名空间`tzdtwsj\TzBot`里，当需要调用时需要在调用前使用`use tzdtwsj\TzBot;`代码进行引用该命名空间，或者调用这些函数时在函数名前面加上`\tzdtwsj\TzBot\`，例如`\tzdtwsj\TzBot\RegisterPlugin(...)`
+> 注意：本API所有实现都在命名空间`tzdtwsj\TzBot`里，调用这些函数时需要在函数名前面加上`\tzdtwsj\TzBot\`，例如`\tzdtwsj\TzBot\RegisterPlugin(...)`
 ---
 # 注册插件
 函数原型：  
@@ -41,8 +41,7 @@ $private：bool
 
 此API的示例用法：  
 ```php
-use tzdtwsj\TzBot;
-RegisterCmd("测试", "测试插件", function($mp){
-    SendMsg($mp,"这是测试消息\n机器人QQ号：".$mp['mydata']['user_id']."\n触发此命令的QQ号：".$mp['user_id'],true,false);
+\tzdtwsj\TzBot\RegisterCmd("测试", "测试插件", function($mp){
+    \tzdtwsj\TzBot\SendMsg($mp,"这是测试消息\n机器人QQ号：".$mp['mydata']['user_id']."\n触发此命令的QQ号：".$mp['user_id'],true,false);
 }, true, -1, false, true, true );
 ```
